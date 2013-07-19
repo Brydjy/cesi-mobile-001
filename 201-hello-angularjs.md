@@ -4,50 +4,50 @@ Hello world angularjs
 Intro
 -----
 
-Le but de ce TP est de créer une application checklist avec AngularJS et bootstrap
+Au travers de ce TP vous allez créer une application type "checklist" afin de vous familiariser avec AngularJS et Bootstrap
 
 Requirements
 ------------
 
 - Un serveur web d'installé (apache par exemple)
-- Un navigateur assez récent pour bien gérer l'html5 (chrome, safari, firefox)
+- Un navigateur assez récent pour bien gérer l'HTML5 (chrome, safari, firefox)
 - Un éditeur de texte
 - Des bases en javascript
 
 Etapes
 ------
 
-### Etape 1 : Installation
+### Etape 1 : Installation ###  
 
 - Cloner le projet github [angular-seed](https://github.com/angular/angular-seed)
-- Copier le répertoire app dans votre serveur web (Vous pouvez aussi utiliser le serveur nodejs fourni)
-- Supprimer les balises autres que script dans le body du fichier index.html
+- Copier le répertoire **app** dans votre serveur web (Vous pouvez aussi utiliser le serveur nodejs fournit)
+- Supprimer toutes les balises du body dans le fichier index.html (veillez à conserver les balises script)
 - Supprimer tous les fichiers du dossier **partials**
-- Supprimer les 3 lignes du callback de la fonction config dans app.js
-- Supprimer les 2 controllers dans js/controllers.js
+- Supprimer les 3 lignes (routeProvider) du callback de la fonction **config** dans le fichier app.js
+- Supprimer les 2 controllers dans le fichier js/controllers.js
 - Télécharger une version de [twitter bootstrap](http://twitter.github.io/bootstrap/) 
-- Inclure dans le index.html le fichier boostrap.min.css
+- Inclure dans le fichier index.html la feuille de style boostrap.min.css
 
-### Etape 2 : Création de la première page
+### Etape 2 : Création de la première page ###
 
-- Dans le fichier index.html, ajouter dans le body la directive **ng-view**
+- Dans le fichier index.html, ajouter dans le body la directive **ng-view**(une balise div)
 - Créer un nouveau fichier list.html dans le répertoire partials et y ajouter le texte suivant :  "page liste"
 - Ajouter le controller ListController dans le fichier controllers.js (ne pas oublier de passer $scope dans le constructeur)
 - Dans app.js, configurer la route vers "checklists" avec en template list.html et en controller ListController
-- Ajouter la page checklists en chemin par défault
+- Ajouter la page **checklists** en chemin par défault
 
 ### Etape 3 : Navbars
 
-- Au début du fichier list.html, ajouter une navbar avec en title "Checklists"
+- Au début du fichier list.html, ajouter une navbar avec un titre "Checklists"
 - Ajouter dans cette navbar un lien en forme de bouton avec une icone "+"
 
 ### Etape 4 : Deuxième page
 
 - Créer un nouveau fichier view.html dans le dossier partials
-- Ajouter une navbar avec "Checklist 1" en title et un bouton back poitant vers la page list
-- Ajouter dans le contenu "Contenu de la checklist 1"
-- Ajouter le controller ViewController dans controllers.js (passer $scope et $routeParams en paramètre du constructeur)
-- Dans app.js, créer la route pour accéder à cette page sous la form "checklists/:checklistId"
+- Ajouter une navbar avec "Checklist 1" en guise de titre et un bouton back poitant vers la page de listing des checklists (list.html)
+- Ajouter dans le contenu "Les tâches de la checklist 1"
+- Ajouter le controller **ViewController** dans controllers.js (passer $scope et $routeParams en paramètre du constructeur)
+- Dans app.js, créer la route pour accéder à cette page sous la forme "checklists/:checklistId"
 - Dans la page list, créer un lien vers la nouvelle page (vers checklists/1 par exemple)
 
 ### Etape 5 : Page List
@@ -59,8 +59,8 @@ Etapes
 
 ### Etape 6 : Page View
 
-- Dans le fichier view.html, ajouter une list en nav tabs stacked
-- Ajouter dans les liens à droite des icon-ok et remove
+- Dans le fichier view.html, ajouter une list en nav-tabs et nav-stacked
+- Ajouter dans les liens à droite des icon-ok et icon-remove
 
 ### Etape 7 : Page Formulaire
 
@@ -71,7 +71,7 @@ Etapes
 - Créer le formulaire avec :  
   - Un input text pour le nom de la checklist
   - Une liste d'input text pour les tâches
-  - Un bouton pour ajouter des input de tâche
+  - Un bouton permettant d'ajouter des champs pour de nouvelles tâches
 
 ### Etape 8 : Page list dynamique
 
@@ -116,12 +116,12 @@ Exemple de structure de l'objet checklists:
 
 ### Etape 9 : Filtre page list
 
-- Ajouter un champs input text avec la class "search-query", en lui ajoutant le ng-model query.name
+- Ajouter un champ input de type text avec la class "search-query", en lui ajoutant le ng-model "query.name"
 - Ajouter le filtre dans le ng-repeat pour filtrer la liste
 
 ### Etape 10 : Page view dynamique
 
-- Récupérer l'id de la checklist à l'aide du paramètre $routeParams, et ajouté la checklist dans le scope
+- Récupérer l'id de la checklist à l'aide du paramètre $routeParams et ajouter la checklist dans le scope
 - Stocker l'id dans le scope
 - Dans le fichier view.html, changer le titre de la page par le nom de la checklist
 - Ajouter le bouton edit dans le header pointant vers le formulaire d'édition
@@ -132,13 +132,13 @@ Exemple de structure de l'objet checklists:
 
 ### Etape 11 : Page form
 
-- Récupérer l'id de la checklist à l'aide du paramètre $routeParams, et ajouté la checklist dans le scope
+- Récupérer l'id de la checklist à l'aide du paramètre $routeParams et ajouter la checklist dans le scope
 - Si il n'y a pas d'id
   - Créer un nouvel objet checklist
   - Ajouter le nouvel objet aux autres checklists
   - Récupérer l'id du nouvel objet
-- Stocker l'id dans le scope
-- Changer le title par "Edit <Nom de la checklist>"
+- Sinon, stocker l'id dans le scope
+- Puis, changer le titre par "Edit <Nom de la checklist>"
 - Ajouter un bouton back pointant vers la page view avec l'id
 - Dans le input text du nom, ajouter le ng-model pour qu'il pointe sur le nom de la checklist
 - Ajouter un ng-repeat et ajouter un input pour chaque tâche avec comme ng-model la tâche courante
