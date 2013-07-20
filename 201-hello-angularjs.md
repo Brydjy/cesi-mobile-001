@@ -156,6 +156,7 @@ Ressources
 
 ### Angular
 
+- [AngularJS] (http://angularjs.org/)
 - [Directives](http://docs.angularjs.org/guide/directive)
 - [Controllers](http://docs.angularjs.org/guide/dev_guide.mvc.understanding_controller)
 - [Routes](http://docs.angularjs.org/tutorial/step_07)
