@@ -175,3 +175,4 @@ Ressources
 ### Autre
 
 - [Localstorage](http://www.lafermeduweb.net/billet/le-stockage-local-en-html5-localstorage-942.html)
+- [Module AngularJS - LocalStorage] (https://github.com/grevory/angular-local-storage)
