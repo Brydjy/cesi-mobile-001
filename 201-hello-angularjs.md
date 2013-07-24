@@ -17,7 +17,7 @@ Requirements
 Etapes
 ------
 
-### Etape 1 : Installation ###  
+### Etape 1 : Installation
 
 - Cloner le projet github [angular-seed](https://github.com/angular/angular-seed)
 - Copier le répertoire **app** dans votre serveur web (Vous pouvez aussi utiliser le serveur nodejs fournit)
