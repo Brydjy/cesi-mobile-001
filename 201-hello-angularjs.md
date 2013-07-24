@@ -4,7 +4,16 @@ Hello world angularjs
 Intro
 -----
 
-Au travers de ce TP vous allez créer une application type "checklist" afin de vous familiariser avec AngularJS et Bootstrap
+Au travers de ce TP vous allez créer une application type "Checklist" (todoList) afin de vous familiariser avec AngularJS et Bootstrap  
+
+Fonctionnalités
+---------------
+
+Une fois terminée l'application devra :  
+
+- Lister un ensemble de Checklist (liste de course, A faire demain, A faire aujourd'hui, etc.)
+- Lors du clic sur une des Checlist présentes, on pourra accéder à une page listant les tâches pour la Checklist concernée
+- Sur la Checklist donnée, on pourra éditer
 
 Requirements
 ------------
