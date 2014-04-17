@@ -91,7 +91,7 @@ Etapes
 - Dans le fichier *list.html*, supprimer le contenu de la liste (les li)
 - Ajouter une balise li avec la directive **ng-repeat** pour parcourir l'object *checklists*
   - Mettre en label du lien le nom de la checklist
-  - Mettre en UTL du lien le chemin vers la page *view* avec le bon ID de checklist
+  - Mettre en URL du lien le chemin vers la page *view* avec le bon ID de checklist
 
 Exemple de structure de l'objet checklists:
 
