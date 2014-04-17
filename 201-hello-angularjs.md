@@ -13,8 +13,8 @@ Une fois terminée l'application permettra :
 
 - De lister un ensemble de Checklist (liste de course, A faire demain, A faire aujourd'hui, etc.)
 - D'ajouter une nouvelle Checklist avec autant de tâches que souhaitées
-- Lors du clic sur une des Checlist présentes, on pourra accéder à une page listant les tâches pour la Checklist concernée
-- Sur la Checklist donnée, on pourra éditer la Checklist en cours
+- Lors du clic sur une des checklists présentes, on pourra accéder à une page listant les tâches pour la checklist concernée
+- Sur la checklist donnée, on pourra éditer la checklist en cours
 
 Requirements
 ------------
