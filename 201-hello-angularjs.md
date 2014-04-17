@@ -124,6 +124,39 @@ Exemple de structure de l'objet checklists:
 		]
 	  },
 	];
+	
+Exemple de structure JSON de l'objet checklists:
+
+    [
+	  {
+	    "name": "checklist1",
+		"id": 1,
+		"tasks": [
+		  {"name": "Tâche 1", "done": true},
+		  {"name": "Tâche 2", "done": false},
+		  {"name": "Tâche 3", "done": false}
+		]
+	  },
+	  {
+	    "name": "checklist2",
+		"id": 2,
+		"tasks": [
+		  {"name": "Tâche 1", "done": true},
+		  {"name": "Tâche 2", "done": false},
+		  {"name": "Tâche 3", "done": false}
+		]
+	  },
+	  {
+	    "name": "checklist3",
+		"id": 3,
+		"tasks": [
+		  {"name": "Tâche 1", "done": true},
+		  {"name": "Tâche 2", "done": false},
+		  {"name": "Tâche 3", "done": false}
+		]
+	  }
+	];
+
 
 ### Etape 9 : Filtre page list
 
