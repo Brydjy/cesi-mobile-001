@@ -219,4 +219,6 @@ Ressources
 ### Autre
 
 - [Localstorage](http://www.lafermeduweb.net/billet/le-stockage-local-en-html5-localstorage-942.html)
+- [Localstorage](http://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html)
 - [Module AngularJS - LocalStorage] (https://github.com/grevory/angular-local-storage)
+- Pour vider son local storage sous Chrome : Paramètre --> Onglet "Paramètres" --> "Afficher les paramètres avancés" --> sous "Confidentialité", cliquer sur "Paramètres de contenu", puis cliquer sur "Cookier et données de site...", faites le ménage;
