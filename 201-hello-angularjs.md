@@ -63,7 +63,7 @@ Etapes
 
 ### Etape 5 : Page List
 
-- Dans le fichier *list.html*, ajouter une "list" en "nav tabs stacked" (pour donner un effet list mobile)
+- Dans le fichier *list.html*, ajouter une liste temporaire de trois checklists différentes (aujourd'hui, demain, plus tard) en "nav tabs stacked" (pour donner un effet liste mobile)
 - Les liens de la liste doivent pointer vers la page *view*
 - Dans les liens de la liste, ajouter une icon-chevron-right avec la class pull-right(pour la mettre à droite)
 
