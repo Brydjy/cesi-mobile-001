@@ -71,7 +71,7 @@ Etapes
 
 ### Etape 6 : Page View
 
-- Dans le fichier *view.html*, ajouter une liste en nav-tabs et nav-stacked
+- Dans le fichier *view.html*, ajouter une liste en nav-stacked
 - Dans le header, ajouter à droite une bouton pour éditer la checklist avec un icon-pencil (Pour un affichage plus propre, utiliser le fluid grid system de bootstrap)
 - Ajouter dans les liens à droite des "icon-ok" et "icon-remove" (bootstrap)
 
