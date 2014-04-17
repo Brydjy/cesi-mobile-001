@@ -36,7 +36,7 @@ Etapes
 - Supprimer tous les fichiers du dossier **partials**
 - Supprimer les 3 lignes (routeProvider) du callback de la fonction **config** dans le fichier *app.js*
 - Supprimer les 2 controllers dans le fichier *js/controllers.js*
-- Télécharger une version de [twitter bootstrap](http://twitter.github.io/bootstrap/) et placer le dossier **bootstrap** dans la répertoire *lib* de votre projet
+- Télécharger une version de [twitter bootstrap](http://twitter.github.io/bootstrap/) (ou [la dernière version](http://getbootstrap.com/) et placer le dossier **bootstrap** dans la répertoire *lib* de votre projet
 - Inclure dans le fichier *index.html* la feuille de style *boostrap.min.css*
 
 ### Etape 2 : Création de la première page
