@@ -29,7 +29,9 @@ Etapes
 
 ### Etape 1 : Installation
 
+- Prendre connaissance de la documentation du projet github [angular-seed](https://github.com/angular/angular-seed)
 - Cloner le projet github [angular-seed](https://github.com/angular/angular-seed) ou téléchargez-le au format zip.
+- Veiller à bien télécharger / ajouter la lib AngularJS dans votre projet.
 - Copier le répertoire **app** dans votre serveur web (Vous pouvez aussi utiliser le serveur nodejs fournit)
 - **conseil** : gardez une copie du répertoire **app**, afin de vous en servir en tant que modèle pour la suite du TP
 - Supprimer toutes les balises du body dans le fichier index.html tout en conservant les balises script
