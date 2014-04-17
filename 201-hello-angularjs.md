@@ -56,7 +56,7 @@ Etapes
 
 - Créer un nouveau fichier *view.html* dans le dossier **partials**
 - Ajouter une navbar avec "Checklist 1" en guise de titre et un bouton back poitant vers la page de listing des checklists (*list.html*)
-- Ajouter dans le contenu "Les tâches de la checklist 1"
+- Ajouter dans le contenu le texte temporaire suivant : "Les tâches de la checklist 1"
 - Ajouter le controller **ViewController** dans *controllers.js* (passer $scope et $routeParams en paramètre du constructeur)
 - Dans *app.js*, créer la route pour accéder à cette page sous la forme "checklist/:checklistId"
 - Dans la page *list*, créer un lien vers la nouvelle page (vers checklist/1 par exemple)
