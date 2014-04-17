@@ -155,7 +155,7 @@ Exemple de structure JSON de l'objet checklists:
 		  {"name": "Tâche 3", "done": false}
 		]
 	  }
-	];
+	]
 
 
 ### Etape 9 : Filtre page list
