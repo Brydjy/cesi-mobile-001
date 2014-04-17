@@ -89,7 +89,7 @@ Etapes
 - Ajouter un controller **AppController** au body (directive ngController).
 - Ajouter un attribut checklists à l'objet **$scope** qui contiendra les données de la checklist.
 - Dans le fichier *list.html*, supprimer le contenu de la liste (les li)
-- Ajouter une balise li avec la directive **ng-repeat** pour parcourir l'object checklist
+- Ajouter une balise li avec la directive **ng-repeat** pour parcourir l'object *checklists*
   - Mettre en label du lien le nom de la checklist
   - Mettre en url du lien le chemin vers la page view avec le bonne id
 
