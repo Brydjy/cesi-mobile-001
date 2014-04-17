@@ -65,13 +65,13 @@ Etapes
 
 ### Etape 5 : Page List
 
-- Dans le fichier *list.html*, ajouter une liste temporaire de trois checklists différentes (aujourd'hui, demain, plus tard) en "nav tabs stacked" (pour donner un effet liste mobile)
+- Dans le fichier *list.html*, ajouter une liste temporaire de trois checklists différentes (aujourd'hui, demain, plus tard) en "nav-stacked" ou "list-group" (pour donner un effet liste mobile)
 - Les liens de la liste doivent pointer vers la page *view*
 - Dans les liens de la liste, ajouter une icon-chevron-right avec la class pull-right(pour la mettre à droite)
 
 ### Etape 6 : Page View
 
-- Dans le fichier *view.html*, ajouter une liste en nav-stacked
+- Dans le fichier *view.html*, ajouter une liste en "nav-stacked" ou "list-group"
 - Dans le header, ajouter à droite une bouton pour éditer la checklist avec un icon-pencil (Pour un affichage plus propre, utiliser le fluid grid system de bootstrap)
 - Ajouter dans les liens à droite des "icon-ok" et "icon-remove" (bootstrap)
 
