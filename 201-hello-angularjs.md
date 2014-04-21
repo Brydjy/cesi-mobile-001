@@ -19,10 +19,11 @@ Une fois terminée l'application permettra :
 Requirements
 ------------
 
-- Un serveur web d'installé (apache par exemple)
-- Un navigateur assez récent pour bien gérer l'HTML5 (chrome, safari, firefox)
+- Un serveur web d'installé (apache ou node.js par exemple)
+- Un navigateur assez récent pour bien gérer l'HTML5 (chrome, safari, firefox, IE 11)
 - Un éditeur de texte
 - Des bases en javascript
+- éventuellement les bases d'AngularJS
 
 Etapes
 ------
@@ -32,11 +33,11 @@ Etapes
 - Prendre connaissance de la documentation du projet github [angular-seed](https://github.com/angular/angular-seed)
 - Cloner le projet github [angular-seed](https://github.com/angular/angular-seed) ou téléchargez-le au format zip.
 - Veiller à bien télécharger / ajouter la lib AngularJS dans votre projet. 
-	- Attention, de base il est programmé avec Bower
+	- Attention, de base il est ajouté via Bower (qui n'est pas forcément présent sur votre poste)
 	- [Accès aux différentes versions AngularJS](http://code.angularjs.org/)
-- Copier le répertoire **app** dans votre serveur web (Vous pouvez aussi utiliser le serveur nodejs fournit)
+- Copier le répertoire **app** dans votre serveur web (Vous pouvez aussi utiliser le serveur node.js fournit)
 - **conseil** : gardez une copie du répertoire **app**, afin de vous en servir en tant que modèle pour la suite du TP
-- Supprimer toutes les balises du body dans le fichier index.html tout en conservant les balises script
+- Supprimer toutes les balises du body dans le fichier index.html tout en conservant les balises script (attention au chemin bower_components)
 - Supprimer tous les fichiers du dossier **partials**
 - Supprimer les 3 lignes (routeProvider) du callback de la fonction **config** dans le fichier *app.js*
 - Supprimer les 2 controllers dans le fichier *js/controllers.js*
@@ -46,7 +47,7 @@ Etapes
 ### Etape 2 : Création de la première page
 
 - Dans le fichier *index.html*, ajouter dans le body la directive **ng-view** (dans une balise div)
-- Créer un nouveau fichier *list.html* dans le répertoire *partials* et y ajouter le texte suivant :  page liste
+- Créer un nouveau fichier *list.html* dans le répertoire *partials* et y ajouter le texte suivant :  page liste checklists
 - Ajouter le controller **ListController** dans le fichier *controllers.js* (ne pas oublier de passer $scope dans le constructeur)
 - Dans le fichier *app.js*, configurer la route vers l'url "checklists" avec en template la page *list.html* et en controller **ListController**
 - Ajouter la page **checklists** en chemin par défault
@@ -54,12 +55,12 @@ Etapes
 ### Etape 3 : Navbars
 
 - Au début du fichier *list.html*, ajouter une navbar (bootstrap) avec un titre "Checklists"
-- Ajouter dans cette navbar un lien en forme de bouton avec une icone "+"
+- Ajouter dans cette navbar un lien en forme de bouton avec un icone "+"
 
 ### Etape 4 : Deuxième page
 
 - Créer un nouveau fichier *view.html* dans le dossier **partials**
-- Ajouter une navbar avec "Checklist 1" en guise de titre et un bouton back poitant vers la page de listing des checklists (*list.html*)
+- Ajouter une navbar avec "Checklist 1" en guise de titre et un bouton back pointant vers la page de listing des checklists (*list.html*)
 - Ajouter dans le contenu le texte temporaire suivant : "Les tâches de la checklist 1"
 - Ajouter le controller **ViewController** dans *controllers.js* (passer $scope et $routeParams en paramètre du constructeur)
 - Dans *app.js*, créer la route pour accéder à cette page sous la forme "checklist/:checklistId"
@@ -67,21 +68,21 @@ Etapes
 
 ### Etape 5 : Page List
 
-- Dans le fichier *list.html*, ajouter une liste temporaire de trois checklists différentes (aujourd'hui, demain, plus tard) en "nav-stacked" ou "list-group" (pour donner un effet liste mobile)
+- Dans le fichier *list.html*, ajouter une liste temporaire de trois checklists différentes (par exemple : aujourd'hui, demain, plus tard) en "nav-stacked" ou "list-group" (pour donner un effet liste mobile)
 - Les liens de la liste doivent pointer vers la page *view*
-- Dans les liens de la liste, ajouter une icon-chevron-right avec la class pull-right(pour la mettre à droite)
+- Dans les liens de la liste, ajouter un icon-chevron-right avec la class pull-right (pour la mettre à droite)
 
 ### Etape 6 : Page View
 
 - Dans le fichier *view.html*, ajouter une liste en "nav-stacked" ou "list-group"
-- Dans le header, ajouter à droite une bouton pour éditer la checklist avec un icon-pencil (Pour un affichage plus propre, utiliser le fluid grid system de bootstrap)
+- Dans le header, ajouter à droite un bouton pour éditer la checklist avec un icon-pencil (Pour un affichage plus propre, utiliser le fluid grid system de bootstrap)
 - Ajouter dans les liens à droite des "icon-ok" et "icon-remove" (bootstrap)
 
 ### Etape 7 : Page Formulaire
 
 - Créer une page affichant un formulaire avec 2 chemins (routes) mais un seul controller
-  - Route pour l'ajout le chemin est **checklist/add**
-  - Route pour l'édition le chemin est **checklist/edit/:checkListsId**
+  - Route pour l'ajout : le chemin est **checklist/add**
+  - Route pour l'édition : le chemin est **checklist/edit/:checkListsId**
 - Ajouter un header avec un titre
 - Créer le formulaire avec :  
   - Un input text pour le nom de la checklist
